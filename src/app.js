@@ -1,11 +1,7 @@
 var app = require('express')();
 
 app.get('/', function (req, res) {
-    res.send('gangstar swag')
-})
-
-app.get('/test', function (req, res) {
-    res.send('swag')
+    res.send('we good homie')
 })
 
 var httpServer = require('http').createServer(app)
