@@ -1,4 +1,7 @@
-// https://developer.github.com/guides/managing-deploy-keys/#deploy-keys
+/*
+# iptables -A PREROUTING -t nat -i eth0 -p tcp --dport 85 -j DNAT --to 107.170.185.242:3005
+# iptables -A FORWARD -p tcp -d 107.170.185.242 --dport 3005 -j ACCEPT
+*/
 
 var manager = require('express')()
 var child_process = require('child_process')
@@ -27,7 +30,7 @@ manager.post('/git/release', function (req, res) {
     res.send(200)
 })
 
-manager.get('/version', function (res,res) {
+manager.get('/info', function (res,res) {
     res.send({version:version,lastUpdate:lastUpdate,author:author})
 })
 
