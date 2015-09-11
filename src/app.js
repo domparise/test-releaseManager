@@ -1,7 +1,7 @@
 var app = require('express')();
 
 app.get('/', function (req, res) {
-    res.send('we good homie')
+    res.send('FINAL TEST')
 })
 
 var httpServer = require('http').createServer(app)
