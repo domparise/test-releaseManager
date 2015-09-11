@@ -1,7 +1,7 @@
 var app = require('express')();
 
 app.get('/', function (req, res) {
-    res.send('yolo')
+    res.send('gangstar')
 })
 
 app.get('/test', function (req, res) {
